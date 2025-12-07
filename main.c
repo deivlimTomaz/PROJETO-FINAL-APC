@@ -137,10 +137,12 @@ void login(){
     puts("Matrícula:");
     scanf("%d", &matDigitada);
     limparBuffer();
+    printf("\n");
 
     puts("Senha:");
     scanf("%s", senhaDigitada);
     limparBuffer();
+    printf("\n");
 
     for (int i = 0; i < totalAlunos; i++){
         if ((matDigitada == listaAlunos[i].matricula) && (strcmp(listaAlunos[i].senha, senhaDigitada) == 0)){
